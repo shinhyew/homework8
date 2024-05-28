@@ -327,13 +327,13 @@ int freeBST(Node* head)
     if(head->left == head) //head의 left가 head와 같다면
     {
         free(head); //head에 할당된 메모리 해제
-        return 1;
+        return 1; //리턴 1
     }
 
     Node* p = head->left; //Node의 포인터 p에 head의 left값 할당
 
     freeNode(p); //p에 할당된 메모리 해제
     free(head); //head에 할당된 메모리 해제
-    return 1;
+    return 1; //리턴 1
 
 }
